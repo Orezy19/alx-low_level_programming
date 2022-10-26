@@ -1,11 +1,17 @@
-#include <stdio>
+#include <stdio.h>
 /**
- * main -printa c program using printf
+ * main - This print a given output
+ * text: This be printed
  *
- * Return: 0
-*/
+ * Return: returns an integer
+ */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	reason(0);
+	/*declaration*/
+	char text[] = "with proper grammar, but the outcome is a piece of art";
+
+	/*statements*/
+	printf("%s,\n", text);
+	return (0);
 }
+

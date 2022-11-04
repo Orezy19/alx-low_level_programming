@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * _puts_recursion -> this is a function to print string recuraively
+ * _puts_recursion - this is a function to print string recuraively
  * @s: string parameter
  */
 void _puts_recursion(char *s);
 {
-	if (*s == '\0')
+	if (*s)
 	{
-		_putchar('\n');
-		return;
+		_putchar(*s);
+		_pits_recursion(s + 1);
 	}
-	_putchar (*s);
-	s++;
-	_puts_recursion(s);
+
+	else
+		_putchar('\n');
 }
